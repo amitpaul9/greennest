@@ -1,0 +1,73 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "image": "https://i.ibb.co.com/jdYr8rs/pexels-fabian-stroobants-1098700-2123482.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 22,
+    "rating": 4.6,
+    "availableStock": 15,
+    "careLevel": "Moderate",
+    "description": "Elegant white blooms with lush green leaves, ideal for bright indoor spaces.",
+    "image": "https://i.ibb.co.com/Dfdt4Xc0/pexels-elgolovchenko-12531511.jpg",
+    "providerName": "Leaf & Bloom"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Aloe Vera",
+    "category": "Medicinal",
+    "price": 16,
+    "rating": 4.7,
+    "availableStock": 20,
+    "careLevel": "Easy",
+    "description": "Succulent plant known for its healing gel and minimal watering needs.",
+    "image": "https://i.ibb.co.com/d04BjWvM/pexels-mahmoud-yahyaoui-34368102.jpg",
+    "providerName": "GreenNest Botanicals"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Fiddle Leaf Fig",
+    "category": "Decorative",
+    "price": 35,
+    "rating": 4.5,
+    "availableStock": 8,
+    "careLevel": "Challenging",
+    "description": "Large glossy leaves make this a statement piece for modern interiors.",
+    "image": "https://i.ibb.co.com/jPdT8Mc3/pexels-emhopper-9369637-1.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Spider Plant",
+    "category": "Air Purifier",
+    "price": 14,
+    "rating": 4.9,
+    "availableStock": 25,
+    "careLevel": "Easy",
+    "description": "Fast-growing plant with arching leaves and baby offshoots, great for hanging baskets.",
+    "image": "https://i.ibb.co.com/0yC1dQjF/Zd-Qhogvwx-XB836xn-Ls-BXWE.jpg",
+    "providerName": "Leaf & Bloom"
+  },
+  {
+    "plantId": 6,
+    "plantName": "ZZ Plant",
+    "category": "Low Light",
+    "price": 20,
+    "rating": 4.6,
+    "availableStock": 12,
+    "careLevel": "Easy",
+    "description": "Glossy, drought-tolerant plant that thrives in dim corners with minimal care.",
+    "image": "https://i.postimg.cc/example6.png",
+    "providerName": "GreenNest Botanicals"
+  }]

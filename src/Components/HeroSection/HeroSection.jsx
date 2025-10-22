@@ -12,7 +12,7 @@ const HeroSection = () => {
        <div className='p-8 space-y-2'>
         <h1 className='text-5xl font-blod text-center text-[#344e41]'>Trees Are Life</h1>
         <p className='text-center text-[#344e4180]'>Bring nature closer to your home. Explore our beautifull indoor and outdoor plants</p>
-        <div className='text-center mb-3'><Link className='btn bg-[#344e41] text-white'>Explore All Trees</Link></div>
+        <div className='text-center mb-3'><Link className='btn bg-[#344e41] text-white' to="/allplants">Explore All Trees</Link></div>
         <Swiper
         modules={[Navigation, Pagination]}
         navigation
@@ -21,6 +21,20 @@ const HeroSection = () => {
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+       breakpoints={{
+    // when window width is >= 0px (mobile)
+    0: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 640px (tablet)
+    640: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 1024px (desktop)
+    1024: {
+      slidesPerView: 3,
+    },
+  }}
     >
       <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner1.jpg" alt="" /></div></SwiperSlide>
       <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner2.jpg" alt="" /></div></SwiperSlide>

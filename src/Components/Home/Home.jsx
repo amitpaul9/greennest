@@ -1,14 +1,18 @@
 
+
 import { TreeContext } from '../../../Contexts/TreeContext';
 import HeroSection from '../HeroSection/HeroSection';
-import TreeCard from '../TreeCard/TreeCard';
+import PlantCare from '../PlantCare/PlantCare';
+import ToptreesCard from '../TreeCard/ToptreesCard';
+
 
 const Home = () => {
 
     return (
         <div>
             <HeroSection></HeroSection>
-            <TreeCard></TreeCard>
+            <ToptreesCard></ToptreesCard>
+            <PlantCare></PlantCare>
         </div>
     );
 };

@@ -5,8 +5,8 @@ const Navbar = () => {
 
 const links = [
     <li className='mr-4'><NavLink to="/">Home</NavLink></li>,
-    <li className='mr-4'><NavLink to='/'>Plants</NavLink></li>,
-    <li className='mr-4'><NavLink to="/">My Profile</NavLink></li>
+    <li className='mr-4'><NavLink to='/plants'>Plants</NavLink></li>,
+    <li className='mr-4'><NavLink to="/myprofile">My Profile</NavLink></li>
 ]
 
     return (
@@ -18,14 +18,14 @@ const links = [
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-[#344e41]">
        {links}
       </ul>
     </div>
     <Link className=" text-xl"><div className='h-10 w-40 flex justify-center items-center'><img src="/public/assets/GreenNest Logo2.png" alt="" /></div></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 text-[#344e41]">
       {links}
     </ul>
   </div>

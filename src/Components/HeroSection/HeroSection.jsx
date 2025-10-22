@@ -9,15 +9,15 @@ import { Link } from 'react-router';
 const HeroSection = () => {
 
     return (
-       <div className='p-10 space-y-2'>
+       <div className='p-8 space-y-2'>
         <h1 className='text-5xl font-blod text-center text-[#344e41]'>Trees Are Life</h1>
         <p className='text-center text-[#344e4180]'>Bring nature closer to your home. Explore our beautifull indoor and outdoor plants</p>
-        <div className='text-center'><Link className='btn bg-[#344e41] text-white'>Explore All Trees</Link></div>
+        <div className='text-center mb-3'><Link className='btn bg-[#344e41] text-white'>Explore All Trees</Link></div>
         <Swiper
         modules={[Navigation, Pagination]}
         navigation
       pagination={{ clickable: true }}
-      spaceBetween={20}
+      spaceBetween={10}
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}

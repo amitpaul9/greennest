@@ -1,18 +1,15 @@
-import { use } from "react";
-import { TreeContext } from "../../../Contexts/TreeContext";
+import React from 'react';
 
 const PlantCare = () => {
-  const { plantCare } = use(TreeContext);
-  console.log(plantCare);
 
-  return (
-    <div className="mt-10 flex flex-col items-center">
+ return (
+    <div className="mt-10 flex flex-col items-center justify-center">
       <h1 className="text-center text-3xl font-bold text-[#344e41] mb-3">
         Plant Care Tips
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
-        <div className="card w-120 bg-base-100 card-xs shadow-sm">
+        <div className="card w-90 lg:w-100 bg-base-100 card-xs shadow-sm">
           <div className="card-body px-7">
             <h1 className="card-title flex justify-center w-full text-lg">
               🌱 Watering Tips
@@ -53,7 +50,7 @@ const PlantCare = () => {
         </div>
 
 
-         <div className="card w-120 bg-base-100 card-xs shadow-sm">
+         <div className="card w-90 lg:w-100 bg-base-100 card-xs shadow-sm">
           <div className="card-body px-7">
             <h1 className="card-title flex justify-center w-full text-lg">
               ☀️ Sunlight Tips
@@ -85,7 +82,7 @@ const PlantCare = () => {
         </div>
 
 
-         <div className="card w-120 bg-base-100 card-xs shadow-sm">
+         <div className="card w-90 lg:w-100 bg-base-100 card-xs shadow-sm">
           <div className="card-body px-7">
             <h1 className="card-title flex justify-center w-full text-lg">
               🌿 Fertilizing Tips
@@ -125,4 +122,10 @@ Choose a balanced NPK fertilizer (like 10-10-10) for most plants.</li>
   );
 };
 
+
 export default PlantCare;
+
+
+  
+
+

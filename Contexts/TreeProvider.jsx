@@ -7,6 +7,7 @@ const TreeProvider = ({children}) => {
     const [topTrees, setTopTrees] = useState([]);
     const [plantCare, setPlantCAre] = useState([]);
 
+
 useEffect(()=>{
     fetch('/TreeData.json')
     .then(res=> res.json())
@@ -34,11 +35,15 @@ useEffect(()=>{
     .catch(err=> console.log(err))
 }, [])
 
+
+
+
     const TreeInfo = {
         trees, 
         loader,
         topTrees,
         plantCare,
+ 
     }
 
 

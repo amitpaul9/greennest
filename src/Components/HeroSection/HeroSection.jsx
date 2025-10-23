@@ -36,17 +36,17 @@ const HeroSection = () => {
     },
   }}
     >
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner1.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner2.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner3.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner4.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner5.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner6.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner7.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner8.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner9.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner10.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[400px]'><img src="/public/assets/banner11.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner1.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner2.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner3.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner4.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner5.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner6.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner7.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner8.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner9.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner10.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner11.jpg" alt="" /></div></SwiperSlide>
 
     </Swiper>
        </div>

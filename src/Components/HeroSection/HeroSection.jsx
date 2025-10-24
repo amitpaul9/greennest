@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Pagination} from 'swiper/modules';
+import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Link } from 'react-router';
@@ -14,9 +14,13 @@ const HeroSection = () => {
         <p className='text-center text-[#344e4180]'>Bring nature closer to your home. Explore our beautifull indoor and outdoor plants</p>
         <div className='text-center mb-3'><Link className='btn bg-[#344e41] text-white' to="/allplants">Explore All Trees</Link></div>
         <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Autoplay, Navigation, Pagination]}
         navigation
       pagination={{ clickable: true }}
+      autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
       spaceBetween={10}
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
@@ -37,8 +41,8 @@ const HeroSection = () => {
   }}
     >
       <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner1.jpg" alt="" /></div></SwiperSlide>
-      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner2.jpg" alt="" /></div></SwiperSlide>
       <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner3.jpg" alt="" /></div></SwiperSlide>
+      <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner2.jpg" alt="" /></div></SwiperSlide>
       <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner4.jpg" alt="" /></div></SwiperSlide>
       <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner5.jpg" alt="" /></div></SwiperSlide>
       <SwiperSlide><div className='flex justify-center item w-full h-[300px]'><img src="/assets/banner6.jpg" alt="" /></div></SwiperSlide>

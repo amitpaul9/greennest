@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { TreeContext } from './TreeContext';
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 import { auth } from '../Firebase/Firebase.config';
+import { GoogleAuthProvider } from "firebase/auth";
 
 const TreeProvider = ({children}) => {
     const [trees, setTrees] = useState([]);
@@ -65,6 +66,11 @@ useEffect(()=>{
 
 
 
+const provider = new GoogleAuthProvider();
+const signinwithGoogle=()=>{
+    return signInWithPopup(auth, provider)
+    
+}
 
 
     const TreeInfo = {
@@ -75,7 +81,9 @@ useEffect(()=>{
         signupUser,
         signInUser,
         user,
-        signOutUser
+        setUser,
+        signOutUser,
+        signinwithGoogle
  
     }
 

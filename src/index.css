@@ -13,3 +13,9 @@ li a.active {
   text-decoration: underline 3px #344e41;
 }
 
+
+input::placeholder{
+  color: #344e4130;
+}
+
+

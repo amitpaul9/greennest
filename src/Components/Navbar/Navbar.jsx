@@ -41,7 +41,8 @@ const links = [
     </ul>
   </div>
  {user ? <div className='navbar-end'> 
-    
+
+
     {/* dropdown  */}
     <div className="dropdown dropdown-end">
   <div tabIndex={0} className=" mr-5 border-2 border-[#344e41] rounded-full"><img className='h-10 w-10 rounded-full' src={user.photoURL} alt="" /></div>

@@ -1,17 +1,13 @@
-import React, { use } from 'react';
+
 import { TreeContext } from '../../../Contexts/TreeContext';
 
 const Specialist = () => {
-
-const {Specialists} = use(TreeContext);
-console.log(Specialists)
-
 
 
     return (
          <div className="mt-10 flex flex-col items-center justify-center mb-5">
       <h1 className="text-center text-3xl font-bold text-[#344e41] mb-3">
-        Meet Our Specialist
+        Meet Our Green Experts
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
 

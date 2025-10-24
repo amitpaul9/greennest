@@ -1,0 +1,118 @@
+import React, { useContext, useRef, useState } from 'react';
+import { FaEye, FaRegEyeSlash } from 'react-icons/fa6';
+import { Link, useLocation, useNavigate } from 'react-router';
+import { TreeContext } from '../../../Contexts/TreeContext';
+import { sendPasswordResetEmail } from 'firebase/auth';
+import { auth } from '../../../Firebase/Firebase.config';
+import { toast } from 'react-toastify';
+
+
+const Login = () => {
+    const [showpass, setShowpass] = useState(false);
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState("");
+
+    const {signInUser} = useContext(TreeContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log(location)
+
+    const emailref = useRef();
+
+    // password toggling 
+  const handleTogglePass = (event) => {
+    event.preventDefault();
+    setShowpass(!showpass);
+  };
+
+// login 
+  const handleLogin =(e)=>{
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    
+    signInUser(email, password)
+    .then(result =>{
+        console.log(result.user)
+        setSuccess(true);
+        e.target.reset();
+        navigate(location.state || '/');
+    })
+    .catch(error=>{
+        setError("Wrong email or password");
+        console.log(error.message);
+    })
+  }
+
+  const handleForgetPassword=()=>{
+    const email = emailref.current.value;
+    sendPasswordResetEmail(auth, email)
+    .then(res=>{
+        toast.success("Password reset email send successfully");
+        console.log(res);
+    })
+    .catch(error=>console.log(error.message))
+  }
+
+
+
+    return (
+         <div className=" min-h-screen text-black ">
+      <div className="flex justify-center flex-col items-center">
+        <div className="text-center mt-8">
+          <h1 className="text-xl font-bold mb-2">Login</h1>
+        </div>
+        <div className="card bg-[#344e4120] w-full max-w-sm shrink-0 shadow-sm">
+          <div className="card-body">
+            <form onSubmit={handleLogin}>
+              <fieldset className="fieldset">
+                {/* email  */}
+                <label className="label">Email</label>
+                <input
+                  type="email"
+                  className="input bg-white"
+                 ref={emailref}
+                  name="email"
+                />
+                {/* password  */}
+                <label className="label">Password</label>
+                <div className="relative">
+                  <input
+                    type={showpass ? "text" : "password"}
+                    className="input bg-white"
+                   
+                    name="password"
+                  />
+                  <div
+                    onClick={handleTogglePass}
+                    className="absolute top-3.5 right-1"
+                  >
+                    {showpass ? <FaRegEyeSlash className='w-[70px]' /> : <FaEye className='w-[70px]' />}
+                  </div>
+                </div>
+
+                <div onClick={handleForgetPassword}>
+            <Link className='underline' to="https://mail.google.com/mail/u/0/#inbox">Forget Password?</Link>
+                </div>
+                 {success && (
+                <p className="text-green-500">Account Create successfully</p>
+              )}
+              {error && <p className="text-red-500">{error}</p>}
+                <button className="btn text-white mt-4 bg-[#344e41] ">Login</button>
+              </fieldset>
+             
+            </form>
+            <p>
+              Not yet Registered?
+              <Link to="/register" className="text-[#344e41] ml-2 underline">
+                Register
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    );
+};
+
+export default Login;

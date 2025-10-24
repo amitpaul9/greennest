@@ -58,7 +58,8 @@ const PlantCare = () => {
             <h2 className="font-semibold">
               Plants need sunlight for photosynthesis — their way of making food. But not all plants need the same amount
             </h2>
-            <ol className="list-disc">
+            <div className=''>
+              <ol className="list-disc">
               <li>Know your plant type:
                 <ul className="list-disc pl-6"> 
                 <li>Full-sun plants (like cacti, tomatoes) need 6–8 hours of direct sunlight.</li>
@@ -77,6 +78,7 @@ const PlantCare = () => {
               </li>
               
             </ol>
+            </div>
             <div className="justify-end card-actions"></div>
           </div> 
         </div>

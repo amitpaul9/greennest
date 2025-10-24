@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router';
+import { TreeContext } from '../../../Contexts/TreeContext';
+
 
 const Navbar = () => {
+
+  const {user, signOutUser} = useContext(TreeContext);
+  console.log(user)
+
+  const handleSignOut=()=>{
+    signOutUser()
+    .then(()=>console.log("Sign out Successfull"))
+    .catch(error=>console.log(error.message))
+  }
 
 const links = [
     <li className='mr-4'><NavLink to="/">Home</NavLink></li>,
     <li className='mr-4'><NavLink to='/allplants'>Plants</NavLink></li>,
-    <li className='mr-4'><NavLink to="/myprofile">My Profile</NavLink></li>
+    <li className='mr-4'><NavLink to="/profile">My Profile</NavLink></li>
 ]
 
     return (
-        <div className="navbar shadow-sm bg-white" >
+        <div className="navbar shadow-sm  bg-[#344e4105]" >
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} className="lg:hidden">
@@ -29,9 +40,20 @@ const links = [
       {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
-  </div>
+ {user ? <div className='navbar-end'> 
+    
+    {/* dropdown  */}
+    <div className="dropdown dropdown-end">
+  <div tabIndex={0} className=" mr-5 border-2 border-[#344e41] rounded-full"><img className='h-10 w-10 rounded-full' src={user.photoURL} alt="" /></div>
+  <ul tabIndex="-1" className="dropdown-content menu bg-[#344e41] text-white rounded-box z-1 w-52 p-2 shadow-sm">
+    <li><p>{user.displayName}</p></li>
+    <li><Link onClick={handleSignOut}>Logout</Link></li>
+  </ul>
+</div></div>
+ : <div className="navbar-end ">
+    <Link className="btn bg-[#344e41] text-white mr-2" to="/login">Login</Link>
+    <Link className='btn border-2 border-[#344e41] bg-white' to="/register">Register</Link>
+  </div>}
 </div>
     );
 };

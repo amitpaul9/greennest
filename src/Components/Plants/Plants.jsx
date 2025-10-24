@@ -1,7 +1,6 @@
 import React, { use } from 'react';
 import { TreeContext } from '../../../Contexts/TreeContext';
-import { CiStar } from 'react-icons/ci';
-import { Link } from 'react-router';
+
 import TreeCard from '../TreeCard/TreeCard';
 
 const Plants = () => {

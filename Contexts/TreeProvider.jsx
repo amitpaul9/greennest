@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { TreeContext } from './TreeContext';
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { auth } from '../Firebase/Firebase.config';
 
 const TreeProvider = ({children}) => {
     const [trees, setTrees] = useState([]);
     const [loader, setloader] = useState(true);
     const [topTrees, setTopTrees] = useState([]);
     const [plantCare, setPlantCAre] = useState([]);
+    const [user, setUser] = useState(null)
 
 
 useEffect(()=>{
@@ -36,6 +39,32 @@ useEffect(()=>{
 }, [])
 
 
+// Authentication 
+const signupUser = (email, password) =>{
+   return createUserWithEmailAndPassword(auth, email, password)
+}
+
+const signInUser = (email, password) =>{
+    return signInWithEmailAndPassword(auth, email, password)
+}
+
+
+const signOutUser=()=>{
+    return signOut(auth);
+}
+
+useEffect(()=>{
+    const unsubscribe = onAuthStateChanged(auth, (currentUser)=>{
+        setUser(currentUser);
+        setloader(false);
+    })
+    return ()=>{
+        unsubscribe();
+    }
+}, [])
+
+
+
 
 
     const TreeInfo = {
@@ -43,6 +72,10 @@ useEffect(()=>{
         loader,
         topTrees,
         plantCare,
+        signupUser,
+        signInUser,
+        user,
+        signOutUser
  
     }
 

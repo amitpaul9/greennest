@@ -1,5 +1,4 @@
-[
-  {
+[{
     "plantId": 1,
     "plantName": "Snake Plant",
     "category": "Air Purifier",
@@ -7,7 +6,7 @@
     "rating": 4.8,
     "availableStock": 10,
     "careLevel": "Easy",
-    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "description": "The Snake Plant is an exceptionally hardy and modern houseplant, celebrated for its stiff, upright, sword-like leaves. It's renowned for its 'Easy' care, thriving in low light conditions and tolerating infrequent watering, making it perfect for beginners or dim corners. This plant is a powerful air purifier, famously filtering indoor toxins like formaldehyde and benzene, even at night. Its striking, architectural form and minimal needs make it a popular choice for adding a touch of green to any indoor space, especially bedrooms. It's a resilient and low-maintenance plant that offers both aesthetic and health benefits.",
     "image": "https://i.ibb.co.com/jdYr8rs/pexels-fabian-stroobants-1098700-2123482.jpg",
     "providerName": "UrbanGreen Studio"
   },
@@ -19,7 +18,7 @@
     "rating": 4.6,
     "availableStock": 15,
     "careLevel": "Moderate",
-    "description": "Elegant white blooms with lush green leaves, ideal for bright indoor spaces.",
+    "description": "The Peace Lily is cherished for its elegant white blooms (spathes) that rise above lush, glossy green leaves. It's an ideal choice for adding a touch of sophistication to bright, indoor spaces. Beyond its beauty, it's a fantastic air purifier, known for removing common household toxins. Its 'Moderate' care level is manageable; the plant famously droops its leaves to signal when it needs water, bouncing back quickly. It thrives in bright, indirect light and appreciates higher humidity. A communicative and rewarding plant, it brings both grace and cleaner air to a home or office.",
     "image": "https://i.ibb.co.com/Dfdt4Xc0/pexels-elgolovchenko-12531511.jpg",
     "providerName": "Leaf & Bloom"
   },
@@ -31,7 +30,7 @@
     "rating": 4.7,
     "availableStock": 20,
     "careLevel": "Easy",
-    "description": "Succulent plant known for its healing gel and minimal watering needs.",
+    "description": "Aloe Vera is a functional succulent known for its dual purpose as an attractive houseplant and a living first-aid kit. Its thick, fleshy leaves contain a soothing gel renowned for its 'healing' properties, especially for minor burns and skin irritations. This plant is incredibly 'Easy' to care for, requiring minimal watering and thriving in bright, direct sunlight. It's the perfect plant for a sunny kitchen windowsill. Its water-storing leaves make it highly drought-tolerant, preferring its soil to dry out completely between waterings. A practical and architectural plant for any sunny home.",
     "image": "https://i.ibb.co.com/d04BjWvM/pexels-mahmoud-yahyaoui-34368102.jpg",
     "providerName": "GreenNest Botanicals"
   },
@@ -43,7 +42,7 @@
     "rating": 4.5,
     "availableStock": 8,
     "careLevel": "Challenging",
-    "description": "Large glossy leaves make this a statement piece for modern interiors.",
+    "description": "The Fiddle Leaf Fig is a true 'statement piece' for modern interiors, famous for its very large, glossy, violin-shaped leaves. It has a tree-like form that adds dramatic height and style to any room. This plant is 'Challenging' to care for, as it demands consistency. It requires very bright, indirect light and a stable environment, away from drafts or frequent moves. It's particular about watering, preferring its soil to dry partially before a thorough soak. While finicky, its stunning visual impact makes it a rewarding challenge for dedicated plant owners seeking a high-design look.",
     "image": "https://i.ibb.co.com/jPdT8Mc3/pexels-emhopper-9369637-1.jpg",
     "providerName": "UrbanGreen Studio"
   },
@@ -55,7 +54,7 @@
     "rating": 4.9,
     "availableStock": 25,
     "careLevel": "Easy",
-    "description": "Fast-growing plant with arching leaves and baby offshoots, great for hanging baskets.",
+    "description": "The Spider Plant is a cheerful and 'Easy' to care for plant, perfect for 'hanging baskets.' It features fast-growing, arching leaves, often striped with white, that create a fountain-like effect. It's famous for producing 'baby' offshoots, or 'spiderettes,' which hang down from long stems and can be easily propagated. This adaptable plant is also a great air purifier and is non-toxic to pets, making it a safe and popular choice for any home. It tolerates a range of light conditions but prefers bright, indirect light. A resilient and rewarding plant that keeps on giving.",
     "image": "https://i.ibb.co.com/0yC1dQjF/Zd-Qhogvwx-XB836xn-Ls-BXWE.jpg",
     "providerName": "Leaf & Bloom"
   },
@@ -67,7 +66,7 @@
     "rating": 4.6,
     "availableStock": 12,
     "careLevel": "Easy",
-    "description": "Glossy, drought-tolerant plant that thrives in dim corners with minimal care.",
+    "description": "The ZZ Plant is the ultimate low-maintenance houseplant, renowned for its 'Easy' care and ability to 'thrive in dim corners.' It features waxy, glossy, dark green leaves on upright stems, giving it a modern, architectural look. Its large, water-storing rhizomes make it extremely drought-tolerant, requiring minimal watering. This plant is perfect for beginners, busy individuals, or low-light offices. It's slow-growing, pest-resistant, and asks for almost nothing but provides consistent, polished greenery. If you want a stylish plant that thrives on neglect, the ZZ Plant is an ideal choice.",
     "image": "https://i.ibb.co.com/NgtwfyDK/1-af764eda-b091-4320-953d-e4de57387c54.webp",
     "providerName": "GreenNest Botanicals"
   }]

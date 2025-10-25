@@ -33,7 +33,7 @@ const links = [
        {links}
       </ul>
     </div>
-    <Link className=" text-xl"><div className='h-10 w-40 flex justify-center items-center'><img src="/public/assets/GreenNest Logo2.png" alt="" /></div></Link>
+    <Link className=" text-xl" to="/"><div className='h-10 w-40 flex justify-center items-center'><img src="/public/assets/GreenNest Logo2.png" alt="" /></div></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-[#344e41]">

@@ -6,17 +6,18 @@ import { GoogleAuthProvider } from "firebase/auth";
 
 const TreeProvider = ({children}) => {
     const [trees, setTrees] = useState([]);
-    const [loader, setloader] = useState(true);
+    const [loader, setLoader] = useState(true);
     const [topTrees, setTopTrees] = useState([]);
     const [plantCare, setPlantCAre] = useState([]);
-    const [user, setUser] = useState(null)
+    const [user, setUser] = useState(null);
+    const [authLoading, setAuthLoading] = useState(true);
 
 
 useEffect(()=>{
     fetch('/TreeData.json')
     .then(res=> res.json())
     .then(data=>{setTrees(data);
-        setloader(false)
+        setLoader(false)
     })
     .catch(err=> console.log(err))
 }, [])
@@ -25,7 +26,7 @@ useEffect(()=>{
     fetch('/TopTrees.json')
     .then(res=> res.json())
     .then(data=>{setTopTrees(data);
-        setloader(false);
+        setLoader(false);
     })
     .catch(err=> console.log(err))
 }, [])
@@ -34,7 +35,7 @@ useEffect(()=>{
     fetch('/PlantCare.json')
     .then(res=> res.json())
     .then(data=>{setPlantCAre(data);
-        setloader(false);
+        setLoader(false);
     })
     .catch(err=> console.log(err))
 }, [])
@@ -57,7 +58,8 @@ const signOutUser=()=>{
 useEffect(()=>{
     const unsubscribe = onAuthStateChanged(auth, (currentUser)=>{
         setUser(currentUser);
-        setloader(false);
+        setLoader(false);
+         setAuthLoading(false);
     })
     return ()=>{
         unsubscribe();
@@ -83,7 +85,8 @@ const signinwithGoogle=()=>{
         user,
         setUser,
         signOutUser,
-        signinwithGoogle
+        signinwithGoogle,
+        authLoading
  
     }
 

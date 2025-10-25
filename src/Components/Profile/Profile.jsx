@@ -12,7 +12,7 @@ const handleUpdateProfile=(e)=>{
     e.preventDefault();
     const name = e.target.name.value;
    const photo = e.target.photo.value;
-    const profile = {displayName: name, photoURL:photo}
+    const profile = {displayName: name, photoURL:photo, email: user.email}
     e.target.reset();
     
 
@@ -22,9 +22,9 @@ const handleUpdateProfile=(e)=>{
 }
 
     return (
-       <div >
+       <div className='flex items-center justify-center mt-5'>
          <div className='m-5 flex flex-col justify-center items-center '>
-            <div className="card  w-96 shadow-sm" style={{ backgroundImage: 'linear-gradient(to right, #344e41, #3f5c4b, #4a7655)' }}>
+            <div className="card  w-96 h-[300px] shadow-sm" style={{ backgroundImage: 'linear-gradient(to right, #344e41, #3f5c4b, #4a7655)' }}>
   <figure className=" px-5 pt-5">
     <img 
       src={user.photoURL}
@@ -35,8 +35,10 @@ const handleUpdateProfile=(e)=>{
     <h2 className="card-title">{user.displayName}</h2>
     <h3>{user.email}</h3>
   </div>
-
-  <form className='flex flex-col justify-center items-center' onSubmit={handleUpdateProfile}>
+</div>
+        </div>
+<div className='w-96 h-[300px] shadow-sm card border border-[#344e41] flex flex-col items-center justify-center'>
+      <form className='flex flex-col justify-center items-center' onSubmit={handleUpdateProfile}>
             <fieldset className="fieldset  rounded-box w-xs p-4" >
 
 
@@ -47,11 +49,8 @@ const handleUpdateProfile=(e)=>{
   <button className="btn bg-[#344e41] text-white mt-2">Update Profile</button>
 </fieldset>
         </form>
+</div>       
 </div>
- 
-        </div>
-       
-       </div>
 
     );
 };

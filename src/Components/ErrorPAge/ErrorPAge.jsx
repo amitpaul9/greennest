@@ -6,6 +6,7 @@ import { Link } from 'react-router';
 const ErrorPAge = () => {
     return (
         <div className='flex flex-col container mx-auto min-h-screen'>
+          <title>Page Not Found-GreenNest</title>
             <Navbar></Navbar>
            <main className='flex-1'>
             <div className="flex flex-col justify-center items-center space-y-2 py-10">

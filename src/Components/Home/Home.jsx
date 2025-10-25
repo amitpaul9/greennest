@@ -1,5 +1,6 @@
 
 
+import { Star } from 'lucide-react';
 import { TreeContext } from '../../../Contexts/TreeContext';
 import CustomerReview from '../CustomerReview/CustomerReview';
 import Reviews from '../CustomerReview/Reviews';
@@ -13,13 +14,14 @@ const Home = () => {
 
     return (
         <div>
+            <title>Home-GreenNest</title>
             <HeroSection></HeroSection>
             <ToptreesCard></ToptreesCard>
             <PlantCare></PlantCare>
             <Specialist></Specialist>
             {/* extra homepage section  */}
             {/* <CustomerReview></CustomerReview> */}
-            <Reviews></Reviews>
+            <Reviews></Reviews> 
         </div>
     );
 };

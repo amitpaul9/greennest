@@ -57,7 +57,7 @@ const Login = () => {
   const signupwithGoogle=()=>{
  signinwithGoogle()
  .then(res=>{console.log(res);
-    navigate('/')
+    navigate(location.state || '/');
  })
  .catch(err=>console.log(err))
 }
@@ -66,6 +66,7 @@ const Login = () => {
 
     return (
          <div className=" min-h-screen text-black ">
+          <title>Login-GreenNest</title>
       <div className="flex justify-center flex-col items-center">
         <div className="text-center mt-8">
           <h1 className="text-xl font-bold mb-2">Login</h1>

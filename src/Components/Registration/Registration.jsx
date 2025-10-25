@@ -99,6 +99,7 @@ const signupwithGoogle=()=>{
     
     return (
          <div className=" min-h-screen text-black ">
+          <title>Registration-GreenNest</title>
       <div className="flex justify-center flex-col items-center">
         <div className="text-center mt-8">
           <h1 className="text-xl font-bold mb-2">Sign Up</h1>

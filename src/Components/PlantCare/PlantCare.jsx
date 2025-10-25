@@ -14,10 +14,10 @@ const PlantCare = () => {
             <h1 className="card-title flex justify-center w-full text-lg">
               🌱 Watering Tips
             </h1>
-            <h2 className="font-semibold">
+            <h2 className="font-semibold text-[16px]">
               Proper watering is one of the most important parts of plant care.
             </h2>
-            <ol className="list-disc">
+            <ol className="list-disc text-[13px]">
               <li>
                 Check the soil: Before watering, touch the soil. If the top inch
                 feels dry, it’s time to water.
@@ -55,11 +55,11 @@ const PlantCare = () => {
             <h1 className="card-title flex justify-center w-full text-lg">
               ☀️ Sunlight Tips
             </h1>
-            <h2 className="font-semibold">
+            <h2 className="font-semibold text-[16px]">
               Plants need sunlight for photosynthesis — their way of making food. But not all plants need the same amount
             </h2>
             <div className=''>
-              <ol className="list-disc">
+              <ol className="list-disc text-[13px]">
               <li>Know your plant type:
                 <ul className="list-disc pl-6"> 
                 <li>Full-sun plants (like cacti, tomatoes) need 6–8 hours of direct sunlight.</li>
@@ -89,10 +89,10 @@ const PlantCare = () => {
             <h1 className="card-title flex justify-center w-full text-lg">
               🌿 Fertilizing Tips
             </h1>
-            <h2 className="font-semibold">
+            <h2 className="font-semibold text-[16px]">
               Fertilizers give plants the nutrients they can’t get from soil alone.
             </h2>
-            <ol className="list-disc">
+            <ol className="list-disc text-[13px]">
               <li>
                 Use the right fertilizer:
                 <ul className="list-disc pl-6">

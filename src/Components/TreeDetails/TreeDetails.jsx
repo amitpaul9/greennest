@@ -26,6 +26,7 @@ const TreeDetails = () => {
 
   return (
     <div className="mt-8">
+      <title>Plant Details-GreenNest</title>
       {/* <h1 className='text-[#344e41] text-3xl text-center'>Plant Details</h1> */}
       <div className="mt-5 mb-5 flex lg:flex-row flex-col  gap-8 justify-center px-12">
         <div className="">

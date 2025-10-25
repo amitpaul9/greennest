@@ -7,7 +7,7 @@ const PlantCare = () => {
       <h1 className="text-center text-3xl font-bold text-[#344e41] mb-3">
         Plant Care Tips
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
         <div className="card w-90 lg:w-100 bg-base-100 card-xs shadow-sm">
           <div className="card-body px-7">
@@ -84,7 +84,7 @@ const PlantCare = () => {
         </div>
 
 
-         <div className="card w-90 lg:w-100 bg-base-100 card-xs shadow-sm">
+         <div className="card w-90 md:col-span-2 lg:col-span-1 md:justify-self-center lg:w-100 bg-base-100 card-xs shadow-sm">
           <div className="card-body px-7">
             <h1 className="card-title flex justify-center w-full text-lg">
               🌿 Fertilizing Tips

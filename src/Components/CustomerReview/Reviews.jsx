@@ -13,7 +13,7 @@ const Reviews = () => {
 
 
     return (
-       <div className='mt-8 px-30 space-y-2 mb-8'>
+       <div className='mt-8 px-5 lg:px-30 space-y-2 mb-8'>
         <h1 className='text-3xl text-center text-[#344e41] font-bold'>Customer's Reviews</h1>
         <Swiper
         modules={[Autoplay, Navigation, Pagination]}
@@ -45,7 +45,7 @@ const Reviews = () => {
       <SwiperSlide><div className='flex justify-center item]'>
         <div className="flex ">
          
-          <div className="px-5 shadow-sm w-100 py-3 bg-[#344e4130]">
+          <div className="px-5 shadow-sm w-70 md:w-80 lg:w-100 py-3 bg-[#344e4130]">
             <div className='flex items-center gap-2'>
                  <div className="">
             <img
@@ -70,7 +70,7 @@ const Reviews = () => {
         <SwiperSlide><div className='flex justify-center item]'>
         <div className="flex ">
          
-          <div className="px-5 shadow-sm w-100 py-3 bg-[#344e4130]">
+          <div className="px-5 shadow-sm w-70 md:w-80 lg:w-100 py-3 bg-[#344e4130]">
             <div className='flex items-center gap-2'>
                  <div className="">
             <img
@@ -93,7 +93,7 @@ const Reviews = () => {
          <SwiperSlide><div className='flex justify-center item]'>
         <div className="flex ">
          
-          <div className="px-5 shadow-sm w-100 py-3 bg-[#344e4130]">
+          <div className="px-5 shadow-sm w-70 md:w-80 lg:w-100 py-3 bg-[#344e4130]">
             <div className='flex items-center gap-2'>
                  <div className="">
             <img
@@ -117,7 +117,7 @@ const Reviews = () => {
         <SwiperSlide><div className='flex justify-center item]'>
         <div className="flex ">
          
-          <div className="px-5 shadow-sm w-100 py-3 bg-[#344e4130]">
+          <div className="px-5 shadow-sm w-70 md:w-80 lg:w-100 py-3 bg-[#344e4130]">
             <div className='flex items-center gap-2'>
                  <div className="">
             <img
@@ -142,7 +142,7 @@ const Reviews = () => {
  <SwiperSlide><div className='flex justify-center item]'>
         <div className="flex ">
          
-          <div className="px-5 shadow-sm w-100 py-3 bg-[#344e4130]">
+          <div className="px-5 shadow-sm w-70 md:w-80 lg:w-100 py-3 bg-[#344e4130]">
             <div className='flex items-center gap-2'>
                  <div className="">
             <img
@@ -165,7 +165,7 @@ const Reviews = () => {
  <SwiperSlide><div className='flex justify-center item]'>
         <div className="flex ">
          
-          <div className="px-5 shadow-sm w-100 py-3 bg-[#344e4130]">
+          <div className="px-5 shadow-sm w-70 md:w-80 lg:w-100 py-3 bg-[#344e4130]">
             <div className='flex items-center gap-2'>
                  <div className="">
             <img

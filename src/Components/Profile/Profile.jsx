@@ -22,7 +22,7 @@ const handleUpdateProfile=(e)=>{
 }
 
     return (
-       <div className='flex items-center justify-center mt-5'>
+       <div className='flex lg:flex-row flex-col items-center justify-center mt-5'>
         <title>My Profile-GreenNest</title>
          <div className='m-5 flex flex-col justify-center items-center '>
             <div className="card  w-96 h-[300px] shadow-sm" style={{ backgroundImage: 'linear-gradient(to right, #344e41, #3f5c4b, #4a7655)' }}>

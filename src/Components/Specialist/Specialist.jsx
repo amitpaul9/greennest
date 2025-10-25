@@ -9,7 +9,7 @@ const Specialist = () => {
       <h1 className="text-center text-3xl font-bold text-[#344e41] mb-3">
         Meet Our Green Experts
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
 <div className="card bg-base-100 w-90 lg:w-75 shadow-sm">
   <figure className='p-5'>

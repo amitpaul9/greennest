@@ -22,5 +22,4 @@ HTML, CSS, JavaScript
 React, Tailwind, DaisyUI, SwiperJS etc.
 
 **Deployment:**  
-- Vercel: [example.vercel.com](https://example.vercel.com)  
-- Netlify: [example.netlify.com](https://example.netlify.com)
+- Netlify: [example.netlify.com](https://greennest1.netlify.app/)

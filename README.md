@@ -21,5 +21,25 @@ The platform allows users to explore plant care guides, buy plants, and book exp
 HTML, CSS, JavaScript  
 React, Tailwind, DaisyUI, SwiperJS etc.
 
+⚙️ Installation & Setup
+Prerequisites
+Node.js
+MongoDB
+Firebase Project
+
+## Clone the Repository
+git clone https://github.com/amitpaul9/greennest
+cd your-repo-name
+
+## Install Dependencies
+
+## Frontend
+
+cd client
+npm install
+npm run dev
+
+---
+
 **Deployment:**  
 - Netlify: [example.netlify.com](https://greennest1.netlify.app/)
